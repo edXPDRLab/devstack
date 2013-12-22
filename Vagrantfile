@@ -53,3 +53,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: $script
 
 end
+
+# Vagrant DNS config
+VagrantDNS::Config.logger = Logger.new("dns.log")
