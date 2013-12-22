@@ -30,6 +30,11 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest: 8001, host: 8001
   config.vm.network :forwarded_port, guest: 4567, host: 4567
 
+  # Vagrant DNS config
+  config.dns.tld = "dev"
+  config.vm.hostname = "edx-devstack-zhTW"
+  config.dns.patterns = [/^.*edx.dev$/]
+
   config.vm.synced_folder "#{edx_platform_mount_dir}", "/edx/app/edxapp/edx-platform", :create => true, nfs: true
   config.vm.synced_folder "#{forum_mount_dir}", "/edx/app/forum/cs_comments_service", :create => true, nfs: true
   config.vm.synced_folder "#{ora_mount_dir}", "/edx/app/ora/ora", :create => true, nfs: true
