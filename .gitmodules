@@ -1,0 +1,9 @@
+[submodule "edx-platform"]
+	path = edx-platform
+	url = git@github.com:edXPDRLab/edx-platform.git
+[submodule "cs_comments_service"]
+	path = cs_comments_service
+	url = git@github.com:edXPDRLab/cs_comments_service.git
+[submodule "ora"]
+	path = ora
+	url = git@github.com:edXPDRLab/edx-ora.git
