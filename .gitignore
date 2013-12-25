@@ -1,2 +1,4 @@
+.vagrant
+
 # Vagrant DNS log
 dns.log
