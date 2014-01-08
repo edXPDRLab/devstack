@@ -7,3 +7,6 @@
 [submodule "ora"]
 	path = ora
 	url = git@github.com:edXPDRLab/edx-ora.git
+[submodule "themes/edxpdrlab"]
+	path = themes/edxpdrlab
+	url = git@github.com:edXPDRLab/edx-theme.git
