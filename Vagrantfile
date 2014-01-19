@@ -39,10 +39,10 @@ Vagrant.configure("2") do |config|
   config.vm.box     = "empanada-devstack-zhTW"
   config.vm.box_url = "http://dl.minelab.tw/edX/vagrant-images/20131219-empanada-devstack-zhTW.box"
 
-  config.vm.network :private_network, ip: "192.168.33.10"
-  config.vm.network :forwarded_port, guest: 8000, host: 8000
-  config.vm.network :forwarded_port, guest: 8001, host: 8001
-  config.vm.network :forwarded_port, guest: 4567, host: 4567
+  config.vm.network :private_network, ip: "192.168.33.20"
+  config.vm.network :forwarded_port, guest: 8000, host: 9000
+  config.vm.network :forwarded_port, guest: 8001, host: 9001
+  config.vm.network :forwarded_port, guest: 4567, host: 5567
 
   # Vagrant DNS config
   config.dns.tld = "vm"
