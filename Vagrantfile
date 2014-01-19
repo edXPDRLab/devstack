@@ -36,8 +36,8 @@ end
 Vagrant.configure("2") do |config|
 
   # Creates an edX devstack VM from an official release
-  config.vm.box     = "empanada-devstack"
-  config.vm.box_url = "http://dl.minelab.tw/edX/vagrant-images/20131219-empanada-devstack.box"
+  config.vm.box     = "empanada-devstack-zhTW"
+  config.vm.box_url = "http://dl.minelab.tw/edX/vagrant-images/20131219-empanada-devstack-zhTW.box"
 
   config.vm.network :private_network, ip: "192.168.33.10"
   config.vm.network :forwarded_port, guest: 8000, host: 8000
