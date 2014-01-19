@@ -45,9 +45,9 @@ Vagrant.configure("2") do |config|
   config.vm.network :forwarded_port, guest: 4567, host: 4567
 
   # Vagrant DNS config
-  config.dns.tld = "dev"
+  config.dns.tld = "vm"
   config.vm.hostname = "edx-devstack-zhTW"
-  config.dns.patterns = [/^.*edx.dev$/]
+  config.dns.patterns = [/^.*edx.vm$/]
 
   config.vm.synced_folder "#{edx_platform_mount_dir}", "/edx/app/edxapp/edx-platform", :create => true, nfs: true
   config.vm.synced_folder "#{edx_themes_mount_dir}", "/edx/app/edxapp/themes", :create => true, nfs: true
